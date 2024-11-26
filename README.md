@@ -1,6 +1,10 @@
 # sort-blocks : A support tool that automates the creation of input data for [jcvi MCscan][jcvi].
 
-I wrote a script to automate the process after the blocks file is completed by running "python -m jcvi.compara.synteny mcscan". Running this program generate the blocks file and the blocks.layout file needed to run "python -m jcvi.graphics.synteny".
+I have written a script to automate the process after generating the blocks file by running:  
+python -m jcvi.compara.synteny mcscan.
+
+This script simplifies the workflow by creating both the blocks file and the blocks.layout file required to execute:  
+python -m jcvi.graphics.synteny.
 
 
 The input file should be a blocks file mapped to the same reference. The --iter option to "python -m jcvi.compara.synteny mcscan" does not necessarily need to be set. Specify the name of the directory containing the input files in "-i" option.
